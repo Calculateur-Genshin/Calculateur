@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calcul de l'expérience</title>
+        <link rel="stylesheet" href="../style.css">       
+    </head>
+    <body>
+        <header>
+            <a href="../index.html" class="home">
+                <img src="../images/icone_maison.png" class="icone_maison">
+            </a>
+            <h1>Calcul d'expérience</h1>
+            
+        </header>
+        
+        <section>
+            <div class="left">
+                <div class="voyageur block col-4">
+                    <img src="../images/voyageur.png">
+                    <label for="astuce_voyageur">Quantité d'astuces du voyageur</label>
+                    <input type="number" id="astuce_voyageur" min="0" value="0">
+                </div>
+                <div class="aventurier block col-4">
+                    <img src="../images/aventurier.png">
+                    <label for="conseils_aventurier">Quantité de conseils de l'aventurier</label>
+                    <input type="number" name="conseils_aventurier" id="conseils_aventurier" min="0" value="0">
+                </div>
+                <div class="hero block col-4">
+                    <img src="../images/hero.png">
+                    <label for="leçon_hero">Quantité de leçons du l'héros</label>
+                    <input type="number" name="leçon_hero" id="leçon_hero" min="0" value="0">
+                </div>
+            </div>
+            <div class="">
+                <h3>Expérience total</h3>
+                <p id="total_exp">0</p>
+            </div>
+        </section>
+        <p class="footer">
+            Pour connaitre la quantité exact expérience entre chaque accension, cliquez
+            <a class="lien_wiki" href="https://genshin-impact.fandom.com/wiki/Character_EXP">ici</a>.
+        </p>
+        <script type="text/javascript" src="../js/calc_exp.js"></script>
+    </body>
+</html>

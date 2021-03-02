@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calcul de l'expérience</title>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <header>
+            <a href="../index.html" class="home">
+                <img src="../images/icone_maison.png" class="icone_maison">
+            </a>
+            <h1>Calcul des ressources synthétisées</h1>
+            
+        </header>
+        <div class="option">
+            <label class="origine" for="origine-ressource">Ressources de :</label>
+
+            <select name="origine" id="origine-ressource">
+                <option value="monstre">monstre/livre</option>
+                <option value="donjon">boss/arme</option>
+            </select>
+        </div>
+        
+        <p class="option_synth">Qualité désirée</p>
+
+        <div class="" id="monster_option" >
+            <div>
+                <input type="radio" id="monsterChoice1" name="monster" value="1">
+                <label for="monsterChoice1">2/3 étoiles</label>
+            </div>
+            
+            <div>
+                <input type="radio" id="monsterChoice2"
+                name="monster" value="0" checked>
+                <label for="monsterChoice2">3/4 étoiles</label>
+            </div>
+        </div>
+
+        <div class="disables" id="donjon_option" >
+            <div>
+                <input type="radio" id="donjonChoice1" name="donjon" value="1">
+                <label for="donjonChoice1">3 étoiles</label>
+            </div>
+            
+            <div>
+                <input type="radio" id="donjonChoice2"
+                name="donjon" value="2">
+                <label for="donjonChoice2">4 étoiles</label>
+            </div>
+
+            <div>
+                <input type="radio" id="donjonChoice3"
+                name="donjon" value="0" checked>
+                <label for="donjonChoice3">5 étoiles</label>
+            </div>
+        </div>
+
+        <section class="" id="monster">
+            
+            <div class="left">
+                <div class="block col-4">
+                    <label for="inferieure">Quantité de ressources 1/2 étoiles :</label>
+                    <input type="number" id="inferieure" min="0" value="0">
+                </div>
+                <div class="block col-4">
+                    <label for="intermediaire">Quantité de ressources 2/3 étoiles :</label>
+                    <input type="number" id="intermediaire" min="0" value="0">
+                </div>
+                <div class="block col-4">
+                    <label for="superieure">Quantité de ressources 3/4 étoiles :</label>
+                    <input type="number" id="superieure" min="0" value="0">
+                </div>
+            </div>
+            <h3 class="lg">Ressources totals</h3>
+            <div class="right">
+                <h3 class="md">Ressources totals</h3>
+                <div class="block col-4">
+                    <p id="commun">0</p>
+                </div>
+                <div class="block col-4">
+                    <p id="uncommon">0</p>
+                </div>
+                <div class="block col-4">
+                    <p id="rare">0</p>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="disables" id="donjon">
+            <div class="left">
+                <div class="block col-3">
+                    <label for="etoile2">Quantité de ressources 2 étoiles :</label>
+                    <input type="number" name="inferieure" id="etoile2" min="0" value="0">
+                </div>
+                <div class="block col-3">
+                    <label for="etoile3">Quantité de ressources 3 étoiles :</label>
+                    <input type="number" name="intermediaire" id="etoile3" min="0" value="0">
+                </div>
+                <div class="block col-3">
+                    <label for="etoile4">Quantité de ressources 4 étoiles :</label>
+                    <input type="number" name="superieure" id="etoile4" min="0" value="0">
+                </div>
+                <div class="block col-3">
+                    <label for="etoile5">Quantité de ressources 5 étoiles :</label>
+                    <input type="number" name="legendaire" id="etoile5" min="0" value="0">
+                </div>
+            </div>
+            <h3 class="lg">Ressources totals</h3>
+            <div class="right">
+                <h3 class="md">Ressources totals</h3>
+                <div class="block col-3">
+                    <p id="star2">0</p>
+                </div>
+                <div class="block col-3">
+                    <p id="star3">0</p>
+                </div>
+                <div class="block col-3">
+                    <p id="star4">0</p>
+                </div>
+                <div class="block col-3">
+                    <p id="star5">0</p>
+                </div>
+            </div>
+        </section>
+        <script type="text/javascript" src="../js/calc_synth.js"></script>
+    </body>
+</html>

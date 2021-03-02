@@ -1,0 +1,196 @@
+body {
+    font-family: Arial;
+    background-image: url(images/background.jpg);
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    padding: 0rem 3rem;
+}
+
+h3 {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+img {
+    width: 6rem;
+    align-self: center;
+}
+
+label {
+    width: 11rem;
+    margin-bottom: 0.5rem;
+}
+
+.option_synth {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+}
+
+#monster_option, #donjon_option {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0rem;
+}
+
+#monster_option > div, #donjon_option > div {
+    margin-right: 1rem;
+}
+
+.lien_menu {
+    text-decoration: none;
+    border: black solid 1px;
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 1rem 0rem;
+    text-align: center;
+    background-color: #E7BA53;
+    color: black;
+    font-weight: bold;
+}
+
+.lien_wiki {
+    color: #f0f;
+}
+
+.footer {
+    background-color: #E7BA53;
+    padding: 0.5rem;
+    border: black solid 1px;
+    text-align: center;
+}
+
+.home {
+    position: absolute;
+    background: #E7BA53;
+    border: black solid 1px;
+    border-radius: 100%;
+    padding: 0.4rem;
+    height: 2rem;
+    right: 10px;
+}
+
+.icone_maison {
+    width: 2rem;
+}
+
+.option {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.origine {
+    margin-right: -3rem;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+}
+.right {
+    display: flex;
+    flex-direction: column;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+.lg {
+    display: none;
+}
+
+.block>p:before {
+    content: "====> ";
+}
+
+#total_exp {
+    text-align: center;
+}
+
+#total_exp::after {
+    content: " exp";
+}
+
+.disables {
+    display: none !important;
+}
+
+@media (min-width: 800px) {
+    section {
+        flex-direction: column;
+        margin-top: 5rem;
+    }
+    .left {
+        flex-direction: row;
+    }
+    .right {
+        flex-direction: row;
+    }
+    .footer {
+        position: absolute;
+        bottom: 0;
+        left: 25%;
+        right: 25%;
+    }
+    .block {
+        margin-right: 1rem;
+        text-align: center;
+    }
+    nav {
+        height: auto;
+        flex-direction: row;
+        margin: 20rem 0;
+    }
+    .lien_menu {
+        padding: 1rem 7rem;
+    }
+    .lg {
+        display: initial;
+    }
+    .md {
+        display: none;
+    }
+    .block>#commun:before {
+        content: "Ressources 1/2 étoiles : ";
+    }
+    .block>#uncommon:before {
+        content: "Ressources 2/3 étoiles : ";
+    }
+    .block>#rare:before {
+        content: "Ressources 3/4 étoiles : ";
+    }
+
+    /*###
+    #####*/
+
+    .block>#star2:before {
+        content: "Ressources 2 étoiles : ";
+    }
+    .block>#star3:before {
+        content: "Ressources 3 étoiles : ";
+    }
+    .block>#star4:before {
+        content: "Ressources 4 étoiles : ";
+    }
+    .block>#star5:before {
+        content: "Ressources 5 étoiles : ";
+    }
+}
